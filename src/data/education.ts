@@ -77,7 +77,7 @@ export const educations: Education[] = [
   },
   {
     id: "5",
-    institution: "Bhatkhande Music Institute (Bhatkhande Sangit Vidyapith)",
+    institution: "Bhatkhande Sangit Vidyapith, Lucknow",
     degree: "Visharad",
     field: "Instrumental (Violin)",
     startDate: "2015",
