@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
             {/* Greeting */}
             <div className="inline-block">
               <Badge variant="primary" size="md">
-                👋 Hello, I'm
+                Hello, I'm
               </Badge>
             </div>
 
@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
               </Button>
             </div>
 
-            {/* Tech Stack */}
+            {/* Tech Stack
             <div className="pt-6">
               <p className="text-sm font-semibold text-gray-700 mb-3">
                 Tech Stack:
@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
                   </Badge>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Left side - Profile Image with Orange Shape */}
