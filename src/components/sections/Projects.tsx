@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Container, SectionHeader, Card, Badge } from "../common";
 import { projects, type Project } from "../../data/projects";
+import { getAssetPath } from "../../utils/assets";
 
 type FilterCategory = "Mobile" | "Web" | "Cloud" | "IoT";
 type FilterType = "Team" | "Individual";
@@ -187,7 +188,7 @@ const ProjectCard: React.FC<{
       {/* Project Image */}
       <div className="relative h-48 -m-6 mb-4 overflow-hidden rounded-t-xl">
         <img
-          src={project.image}
+          src={getAssetPath(project.image)}
           alt={project.title}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
           onError={(e) => {

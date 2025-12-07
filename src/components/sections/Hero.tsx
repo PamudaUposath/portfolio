@@ -2,6 +2,7 @@
 import React from "react";
 import { Button, Badge, Container } from "../common";
 import { siteConfig } from "../../data/siteConfig";
+import { getAssetPath } from "../../utils/assets";
 
 export const Hero: React.FC = () => {
   return (
@@ -83,7 +84,7 @@ export const Hero: React.FC = () => {
               <div className="relative z-10 w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 {/* Placeholder for profile image */}
                 <img
-                  src="/profile.jpg" // Replace with your actual image in public folder
+                  src={getAssetPath("/profile.jpg")} // Replace with your actual image in public folder
                   alt={siteConfig.name}
                   className="w-full h-full object-cover"
                   onError={(e) => {

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Container, SectionHeader, Card, Badge } from "../common";
 import { educations, type Education as EducationType } from "../../data/education";
+import { getAssetPath } from "../../utils/assets";
 
 export const Education: React.FC = () => {
   const [selectedEducation, setSelectedEducation] = useState<EducationType | null>(null);
@@ -64,7 +65,7 @@ const EducationCard: React.FC<{
           <div className="w-20 h-20 rounded-full bg-white border-4 border-primary shadow-lg flex items-center justify-center overflow-hidden">
             {education.logo ? (
               <img
-                src={education.logo}
+                src={getAssetPath(education.logo)}
                 alt={`${education.institution} logo`}
                 className="w-full h-full object-contain p-2"
                 onError={(e) => {
@@ -179,7 +180,7 @@ const EducationModal: React.FC<{
               <div className="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center overflow-hidden">
                 {education.logo ? (
                   <img
-                    src={education.logo}
+                    src={getAssetPath(education.logo)}
                     alt={`${education.institution} logo`}
                     className="w-full h-full object-contain p-2"
                     onError={(e) => {
