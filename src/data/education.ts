@@ -17,7 +17,7 @@ export const educations: Education[] = [
   {
     id: "1",
     institution: "Thurstan College",
-    degree: "GCE Ordinary Level",
+    degree: "GCE Ordinary Level in ",
     field: "Secondary Education",
     startDate: "Feb 2008",
     endDate: "May 2019",
@@ -45,7 +45,7 @@ export const educations: Education[] = [
   {
     id: "2",
     institution: "Bhatkhande Sangit Vidyapith, Lucknow",
-    degree: "Visharad",
+    degree: "Visharad in",
     field: "Instrumental (Violin)",
     startDate: "2015",
     endDate: "2019",
@@ -57,7 +57,7 @@ export const educations: Education[] = [
   {
     id: "3",
     institution: "ESOFT Metro Campus",
-    degree: "Diploma",
+    degree: "Diploma in",
     field: "English",
     startDate: "Jan 2019",
     endDate: "Jun 2019",
@@ -67,7 +67,7 @@ export const educations: Education[] = [
   {
     id: "4",
     institution: "Ananda College",
-    degree: "GCE Advanced Level",
+    degree: "GCE Advanced Level in",
     field: "Physical Science Stream",
     startDate: "Jun 2019",
     endDate: "Jan 2022",
@@ -81,25 +81,25 @@ export const educations: Education[] = [
     ],
     logo: "/education/ananda_logo.png"
   },
-  {
-    id: "5",
-    institution: "Sabaragamuwa University of Sri Lanka",
-    degree: "Bachelor of Science",
-    field: "Computing and Information Systems",
-    startDate: "Jul 2023",
-    endDate: "Sep 2023",
-    description: "Initially enrolled in BSc in Computing and Information Systems. Changed degree program on 2023.09.24 to Computer Science at University of Jaffna.",
-    skills: ["C"],
-    logo: "/education/Logo-SUSL.png"
-  },
+  // {
+  //   id: "5",
+  //   institution: "Sabaragamuwa University of Sri Lanka",
+  //   degree: "Bachelor of Science",
+  //   field: "Computing and Information Systems",
+  //   startDate: "Jul 2023",
+  //   endDate: "Sep 2023",
+  //   description: "Initially enrolled in BSc in Computing and Information Systems. Changed degree program on 2023.09.24 to Computer Science at University of Jaffna.",
+  //   skills: ["C"],
+  //   logo: "/education/Logo-SUSL.png"
+  // },
   {
     id: "6",
     institution: "University of Jaffna",
-    degree: "Bachelor of Science",
-    field: "Computer Science",
+    degree: "Computer Science",
+    field: "(Undergraduate)",
     startDate: "Oct 2023",
     endDate: "Present",
-    description: "Currently pursuing BSc in Computer Science with focus on software development, algorithms, and data structures.",
+    description: "Currently pursuing BSc Computer Science with focus on software development, algorithms, and data structures.",
     activities: [
       "Badminton",
       "Gavel Club",

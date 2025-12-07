@@ -33,7 +33,7 @@ export const openSourceContributions: OpenSourceContribution[] = [
     tech: ["TypeScript", "Disaster Response", "Real-time Communication", "Open Source"],
     githubUrl: "https://github.com/disaster-response-sl/resq",
     websiteUrl: "https://github.com/disaster-response-sl/resq",
-    status: "active",
+    status: "completed",
     startDate: "Nov 2025",
   },
   {

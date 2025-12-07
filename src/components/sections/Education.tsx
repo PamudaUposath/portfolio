@@ -108,7 +108,7 @@ const EducationCard: React.FC<{
               )}
             </div>
             <p className="text-lg font-semibold text-gray-700">
-              {education.degree} in {education.field}
+              {education.degree} {education.field}
             </p>
             <div className="flex items-center gap-3 mt-2">
               <p className="text-gray-600">
@@ -213,7 +213,7 @@ const EducationModal: React.FC<{
             <div className="flex-1">
               <h2 className="text-3xl font-bold mb-2">{education.institution}</h2>
               <p className="text-xl font-semibold mb-3">
-                {education.degree} in {education.field}
+                {education.degree} {education.field}
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="text-white/90">
