@@ -4,3 +4,4 @@ export { Badge } from "./Badge";
 export { Card } from "./Card";
 export { SectionHeader } from "./SectionHeader";
 export { Container } from "./Container";
+export { ScrollToTop } from "./ScrollToTop";

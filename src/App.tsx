@@ -12,6 +12,7 @@ import {
   Contact,
   Footer,
 } from "./components/sections";
+import { ScrollToTop } from "./components/common";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 }
