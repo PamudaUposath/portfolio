@@ -16,7 +16,7 @@ export const Education: React.FC = () => {
 
         {/* Education Timeline */}
         <div className="space-y-8">
-          {educations.map((edu, index) => (
+          {[...educations].reverse().map((edu, index) => (
             <EducationCard 
               key={edu.id} 
               education={edu} 

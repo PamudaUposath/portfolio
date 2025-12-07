@@ -15,13 +15,13 @@ export const Experience: React.FC = () => {
 
   // Filter experiences based on selected category
   const filteredExperiences = activeFilter === "All"
-    ? experiences
+    ? [...experiences].reverse()
     : experiences.filter((exp) => {
         if (activeFilter === "Work") return exp.type === "work";
         if (activeFilter === "Leadership") return exp.type === "leadership";
         if (activeFilter === "Volunteer") return exp.type === "volunteer";
         return true;
-      });
+      }).reverse();
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredExperiences.length / ITEMS_PER_PAGE);

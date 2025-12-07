@@ -16,80 +16,6 @@ export interface Education {
 export const educations: Education[] = [
   {
     id: "1",
-    institution: "University of Jaffna",
-    degree: "Bachelor of Science",
-    field: "Computer Science",
-    startDate: "Oct 2023",
-    endDate: "Present",
-    description: "Currently pursuing BSc in Computer Science with focus on software development, algorithms, and data structures.",
-    activities: [
-      "Badminton",
-      "Gavel Club",
-      "IEEE Student Branch"
-    ],
-    skills: [
-      "Java",
-      "Python (Programming Language)",
-      "MIPS Assembly",
-      "MySQL",
-      "MongoDB",
-      "Perl"
-    ],
-    logo: "/education/UOJ-Logo-Color-scaled.png"
-  },
-  {
-    id: "2",
-    institution: "Sabaragamuwa University of Sri Lanka",
-    degree: "Bachelor of Science",
-    field: "Computing and Information Systems",
-    startDate: "Jul 2023",
-    endDate: "Sep 2023",
-    description: "Initially enrolled in BSc in Computing and Information Systems. Changed degree program on 2023.09.24 to Computer Science at University of Jaffna.",
-    skills: ["C"],
-    logo: "/education/Logo-SUSL.png"
-  },
-  {
-    id: "3",
-    institution: "Ananda College",
-    degree: "GCE Advanced Level",
-    field: "Physical Science Stream",
-    startDate: "Jun 2019",
-    endDate: "Jan 2022",
-    grade: "1B and 2Cs (z-score: 1.1546)",
-    description: "Completed Advanced Level studies in Physics, Combined Mathematics, and ICT. Achieved competitive results for university entrance.",
-    activities: [
-      "Board Member (Editor) - Science Union (2020-2021)",
-      "Member of ICT Society (2019-2021)",
-      "Member of Science Union (2019-2021)",
-      "Member of Shooting Sports Association (2019-2021)"
-    ],
-    logo: "/education/ananda_logo.png"
-  },
-  {
-    id: "4",
-    institution: "ESOFT Metro Campus",
-    degree: "Diploma",
-    field: "English",
-    startDate: "Jan 2019",
-    endDate: "Jun 2019",
-    description: "Completed Diploma in English language to enhance communication skills.",
-    logo: "/education/esoft-metro-campus-colombo-sri-lanka.jpg"
-  },
-  {
-    id: "5",
-    institution: "Bhatkhande Sangit Vidyapith, Lucknow",
-    degree: "Visharad",
-    field: "Instrumental (Violin)",
-    startDate: "2015",
-    endDate: "2019",
-    grade: "Second Division",
-    description: "Completed advanced studies in Indian classical music specializing in instrumental violin performance.",
-    skills: ["Violin", "Music"],
-    logo: "/education/Bhatkhande_Sanskriti_Vishwavidyalaya_logo.png"
-  },
-  
-  {
-    id: "6",
     institution: "Thurstan College",
     degree: "GCE Ordinary Level",
     field: "Secondary Education",
@@ -115,5 +41,78 @@ export const educations: Education[] = [
       "Member of Orchestra (2016-2019)"
     ],
     logo: "/education/Thurstan_College_crest.png"
+  },
+  {
+    id: "2",
+    institution: "Bhatkhande Sangit Vidyapith, Lucknow",
+    degree: "Visharad",
+    field: "Instrumental (Violin)",
+    startDate: "2015",
+    endDate: "2019",
+    grade: "Second Division",
+    description: "Completed advanced studies in Indian classical music specializing in instrumental violin performance.",
+    skills: ["Violin", "Music"],
+    logo: "/education/Bhatkhande_Sanskriti_Vishwavidyalaya_logo.png"
+  },
+  {
+    id: "3",
+    institution: "ESOFT Metro Campus",
+    degree: "Diploma",
+    field: "English",
+    startDate: "Jan 2019",
+    endDate: "Jun 2019",
+    description: "Completed Diploma in English language to enhance communication skills.",
+    logo: "/education/esoft-metro-campus-colombo-sri-lanka.jpg"
+  },
+  {
+    id: "4",
+    institution: "Ananda College",
+    degree: "GCE Advanced Level",
+    field: "Physical Science Stream",
+    startDate: "Jun 2019",
+    endDate: "Jan 2022",
+    grade: "1B and 2Cs (z-score: 1.1546)",
+    description: "Completed Advanced Level studies in Physics, Combined Mathematics, and ICT. Achieved competitive results for university entrance.",
+    activities: [
+      "Board Member (Editor) - Science Union (2020-2021)",
+      "Member of ICT Society (2019-2021)",
+      "Member of Science Union (2019-2021)",
+      "Member of Shooting Sports Association (2019-2021)"
+    ],
+    logo: "/education/ananda_logo.png"
+  },
+  {
+    id: "5",
+    institution: "Sabaragamuwa University of Sri Lanka",
+    degree: "Bachelor of Science",
+    field: "Computing and Information Systems",
+    startDate: "Jul 2023",
+    endDate: "Sep 2023",
+    description: "Initially enrolled in BSc in Computing and Information Systems. Changed degree program on 2023.09.24 to Computer Science at University of Jaffna.",
+    skills: ["C"],
+    logo: "/education/Logo-SUSL.png"
+  },
+  {
+    id: "6",
+    institution: "University of Jaffna",
+    degree: "Bachelor of Science",
+    field: "Computer Science",
+    startDate: "Oct 2023",
+    endDate: "Present",
+    description: "Currently pursuing BSc in Computer Science with focus on software development, algorithms, and data structures.",
+    activities: [
+      "Badminton",
+      "Gavel Club",
+      "IEEE Student Branch"
+    ],
+    skills: [
+      "Java",
+      "Python (Programming Language)",
+      "MIPS Assembly",
+      "MySQL",
+      "MongoDB",
+      "Perl"
+    ],
+    logo: "/education/UOJ-Logo-Color-scaled.png"
   }
 ];

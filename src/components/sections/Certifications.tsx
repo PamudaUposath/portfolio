@@ -15,7 +15,7 @@ export const Certifications: React.FC = () => {
   // Get all certifications and publications
   const allItems = achievements.filter(
     (item) => item.category === "certification" || item.category === "publication"
-  );
+  ).reverse();
 
   // Filter based on selected category
   const filteredItems = activeFilter === "All"

@@ -20,7 +20,7 @@ export const Projects: React.FC = () => {
     const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(project.category as FilterCategory);
     const typeMatch = selectedType === null || project.projectType === selectedType;
     return categoryMatch && typeMatch;
-  });
+  }).reverse();
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);

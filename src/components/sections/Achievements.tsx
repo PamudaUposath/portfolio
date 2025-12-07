@@ -8,7 +8,7 @@ export const Achievements: React.FC = () => {
   const [selectedAward, setSelectedAward] = useState<typeof achievements[0] | null>(null);
   
   // Filter only awards
-  const awards = achievements.filter((item) => item.category === "award");
+  const awards = achievements.filter((item) => item.category === "award").reverse();
 
   const ITEMS_PER_VIEW = 3; // Show 3 awards at a time
   const maxIndex = Math.max(0, awards.length - ITEMS_PER_VIEW);
