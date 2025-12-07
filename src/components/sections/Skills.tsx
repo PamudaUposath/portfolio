@@ -1,6 +1,6 @@
 // Skills Section - Categorized skills display
 import React, { useState } from "react";
-import { Container, SectionHeader, Card, Badge } from "../common";
+import { Container, SectionHeader, Card } from "../common";
 import { skills } from "../../data/skills";
 
 const ITEMS_PER_PAGE = 9;
