@@ -13,10 +13,14 @@ import {
   Footer,
 } from "./components/sections";
 import { ScrollToTop } from "./components/common";
+import { SEO } from "./components/SEO";
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      {/* SEO Meta Tags */}
+      <SEO />
+      
       {/* Navigation */}
       <Navbar />
 
