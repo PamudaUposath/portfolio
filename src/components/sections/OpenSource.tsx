@@ -21,7 +21,8 @@ export const OpenSource: React.FC = () => {
     );
   };
 
-  const visibleContributions = openSourceContributions.slice(currentIndex, currentIndex + ITEMS_PER_VIEW);
+  const reversedContributions = [...openSourceContributions].reverse();
+  const visibleContributions = reversedContributions.slice(currentIndex, currentIndex + ITEMS_PER_VIEW);
 
   return (
     <section id="opensource" className="py-20 bg-lightbg">
