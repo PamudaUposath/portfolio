@@ -1,5 +1,6 @@
 // Projects data - Add your projects here
 export interface Project {
+  ongoing?: boolean;
   id: string;
   title: string;
   description: string;
@@ -219,6 +220,7 @@ export const projects: Project[] = [
       { name: "Team Member 8", linkedinUrl: "https://www.linkedin.com/" },
       { name: "Team Member 9", linkedinUrl: "https://www.linkedin.com/" },
     ],
+    ongoing: true,
   },
   {
     id: "12",
@@ -233,5 +235,6 @@ export const projects: Project[] = [
     endDate: "Present",
     githubUrl: "https://github.com/PamudaUposath/SLBIS-Pro",
     highlight: true,
+    ongoing: true,
   },
 ];

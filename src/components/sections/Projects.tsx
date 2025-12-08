@@ -202,6 +202,11 @@ const ProjectCard: React.FC<{
             <Badge variant="dark">⭐ Featured</Badge>
           </div>
         )}
+        {project.ongoing && (
+          <div className="absolute top-4 left-4">
+            <span className="px-3 py-1 bg-white text-green-600 border border-green-500 rounded-full font-semibold text-xs shadow">Ongoing</span>
+          </div>
+        )}
       </div>
 
       {/* Project Details */}
@@ -363,6 +368,11 @@ const ProjectModal: React.FC<{
           {project.highlight && (
             <div className="absolute top-4 left-4">
               <Badge variant="dark">⭐ Featured</Badge>
+            </div>
+          )}
+          {project.ongoing && (
+            <div className="absolute top-4 right-4">
+              <span className="px-4 py-2 bg-white text-green-600 border border-green-500 rounded-full font-semibold text-sm shadow">Ongoing</span>
             </div>
           )}
 
