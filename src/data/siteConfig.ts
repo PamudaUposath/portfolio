@@ -2,8 +2,8 @@
 import { getProjectsCompletedCount, getYearsOfExperience, getTopTechStack } from "../utils/statsCalculator";
 
 export const siteConfig = {
-  name: "Pamuda U. de A. Goonatilake",
-  title: "Full Stack Developer & Cloud Enthusiast",
+  name: "Pamuda",
+  title: "Portfolio",
   tagline: "Passionate about cloud technologies, software quality, volunteering, and empowering tech communities.",
   email: "pamudaugoonatilake@gmail.com",
   phone: "+94716813566", // Optional
