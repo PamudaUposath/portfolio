@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-dark text-white py-12">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
@@ -233,7 +233,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 mt-8">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+          <div className="flex flex-col xl:flex-row justify-center items-center gap-4">
             <p className="text-gray-400 text-sm">
               © {currentYear} {siteConfig.name}. All rights reserved.
             </p>

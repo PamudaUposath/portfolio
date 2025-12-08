@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-right gap-8 ml-auto">
+          <div className="hidden xl:flex items-right gap-8 ml-auto">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -70,14 +70,14 @@ export const Navbar: React.FC = () => {
           {/* CTA Button (Desktop) */}
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-orange-600 transition-all hover:scale-105 ml-6"
+            className="hidden xl:inline-flex items-center px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-orange-600 transition-all hover:scale-105 ml-6"
           >
             Let's Talk
           </a>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
+            className="xl:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -101,7 +101,7 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
+          className={`xl:hidden overflow-hidden transition-all duration-300 ${
             isMobileMenuOpen ? "max-h-96 mt-6" : "max-h-0"
           }`}
         >
