@@ -292,11 +292,13 @@ const ProjectModal: React.FC<{
 }> = ({ project, onClose }) => {
   const [currentMediaIndex, setCurrentMediaIndex] = React.useState(0);
   
-  // Combine main image with gallery items
+  // Combine main image with gallery items, using getAssetPath for all images/videos
   const allMedia = [
-    { url: project.image, type: "image" as const },
-    ...(project.gallery || [])
-  ];
+    { url: getAssetPath(project.image), type: "image" as const },
+    ...((project.gallery || []).map(item => ({
+      ...item,
+      url: item.type === "image" ? getAssetPath(item.url) : item.url
+    })))]
 
   // Close modal on escape key
   React.useEffect(() => {
