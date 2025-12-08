@@ -48,6 +48,11 @@ export const Navbar: React.FC = () => {
           <a
             href="#home"
             className="text-2xl font-bold text-dark hover:text-primary transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.reload();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             {siteConfig.name.split(" ")[0]}
             <span className="text-primary">.</span>
