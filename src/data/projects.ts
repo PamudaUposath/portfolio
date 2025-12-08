@@ -118,6 +118,7 @@ export const projects: Project[] = [
     startDate: "Jul 2025",
     endDate: "Aug 2025",
     githubUrl: "https://github.com/PamudaUposath",
+    linkedinProjectUrl: "https://www.linkedin.com/pamuda-u-goonatilake/",
     highlight: false,
     participants: [
       { name: "Pasidu Chamod (Team Leader)", linkedinUrl: "https://www.linkedin.com/in/pamuda-uposath/" },
@@ -184,7 +185,7 @@ export const projects: Project[] = [
     startDate: "Oct 2025",
     endDate: "Oct 2025",
     githubUrl: "https://github.com/PamudaUposath/iot-smart-waste-bin",
-    liveUrl: "https://wokwi.com/projects/441368271264615425",
+    // liveUrl: "https://wokwi.com/projects/441368271264615425",
     highlight: true,
     participants: [
       { name: "Vishmitha Janith (Team Leader)", linkedinUrl: "https://www.linkedin.com/in/vishmitha-janith/" },
