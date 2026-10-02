@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
               {siteConfig.name.split(" ")[0]}
               <span className="text-primary">.</span>
             </h3>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 text-justify">
               {siteConfig.tagline}
             </p>
             <p className="text-gray-400 text-sm">

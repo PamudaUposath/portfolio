@@ -5,7 +5,7 @@ import { projects, type Project } from "../../data/projects";
 import { getAssetPath } from "../../utils/assets";
 
 type FilterCategory = "Mobile" | "Web" | "Cloud" | "IoT";
-type FilterType = "Team" | "Individual";
+type FilterType = "Team" | "Individual" | "Open Source";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -16,12 +16,33 @@ export const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const sectionRef = React.useRef<HTMLElement>(null);
 
-  // Filter projects based on selected categories and type
-  const filteredProjects = projects.filter((project) => {
-    const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(project.category as FilterCategory);
-    const typeMatch = selectedType === null || project.projectType === selectedType;
-    return categoryMatch && typeMatch;
-  }).reverse();
+  // Helper to parse dates like "Aug 2026", "Present", "2026" for chronological sorting
+  const getProjectTimestamp = (project: Project): number => {
+    const dateStr = project.endDate || project.startDate || "";
+    if (dateStr.toLowerCase() === "present") {
+      return new Date("2026-12-31").getTime();
+    }
+    const parsed = Date.parse(dateStr.length === 4 ? `Jan 1, ${dateStr}` : `1 ${dateStr}`);
+    return isNaN(parsed) ? 0 : parsed;
+  };
+
+  // Filter and sort projects: Featured projects first, then descending chronological order (newest to oldest)
+  const filteredProjects = projects
+    .filter((project) => {
+      const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(project.category as FilterCategory);
+      const typeMatch = selectedType === null || project.projectType === selectedType;
+      return categoryMatch && typeMatch;
+    })
+    .sort((a, b) => {
+      // 1. Featured projects come first
+      if (a.highlight && !b.highlight) return -1;
+      if (!a.highlight && b.highlight) return 1;
+      // 2. Descending by end date/timestamp (newest first)
+      const diff = getProjectTimestamp(b) - getProjectTimestamp(a);
+      if (diff !== 0) return diff;
+      // 3. Fallback descending by ID
+      return parseInt(b.id, 10) - parseInt(a.id, 10);
+    });
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
@@ -31,7 +52,7 @@ export const Projects: React.FC = () => {
 
   // Get unique categories and types for filter buttons
   const categories: FilterCategory[] = ["Mobile", "Web", "Cloud", "IoT"];
-  const projectTypes: FilterType[] = ["Team", "Individual"];
+  const projectTypes: FilterType[] = ["Team", "Individual", "Open Source"];
 
   // Toggle category filter
   const toggleCategory = (category: FilterCategory) => {

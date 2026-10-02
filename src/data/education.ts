@@ -17,14 +17,14 @@ export const educations: Education[] = [
   {
     id: "1",
     institution: "Thurstan College",
-    degree: "GCE Ordinary Level in ",
-    field: "Secondary Education",
+    degree: "GCE Ordinary Level",
+    field: "(Secondary Education)",
     startDate: "Feb 2008",
     endDate: "May 2019",
     grade: "9As in O/L (2018)",
-    description: "Completed primary and secondary education with excellent academic and extracurricular achievements.",
+    description: "Completed secondary education with 9As at the GCE O/L examination along with active sports and co-curricular involvement.",
     activities: [
-      "Junior Prefect (2017)",
+       "Junior Prefect (2017)",
       "Primary Prefect (2012)",
       "U15 Vice-Captain - Badminton",
       "U14 Vice-Captain - Badminton",
@@ -38,7 +38,7 @@ export const educations: Education[] = [
       "Member of badminton team (2013-2019)",
       "Member of Junior Western Band (2010-2013)",
       "Member of Senior Brass Band (TCSBB) (2013-2019)",
-      "Member of Orchestra (2016-2019)"
+      "Member of Orchestra (2016-2019)",
     ],
     logo: "/education/Thurstan_College_crest.png"
   },
@@ -50,7 +50,7 @@ export const educations: Education[] = [
     startDate: "2015",
     endDate: "2019",
     grade: "Second Division",
-    description: "Completed advanced studies in Indian classical music specializing in instrumental violin performance.",
+    description: "Completed advanced classical music studies specialising in instrumental violin performance.",
     skills: ["Violin", "Music"],
     logo: "/education/Bhatkhande_Sanskriti_Vishwavidyalaya_logo.png"
   },
@@ -61,23 +61,23 @@ export const educations: Education[] = [
     field: "English",
     startDate: "Jan 2019",
     endDate: "Jun 2019",
-    description: "Completed Diploma in English language to enhance communication skills.",
+    description: "Completed Diploma in English language.",
     logo: "/education/esoft-metro-campus-colombo-sri-lanka.jpg"
   },
   {
     id: "4",
     institution: "Ananda College",
-    degree: "GCE Advanced Level in",
-    field: "Physical Science Stream",
+    degree: "GCE Advanced Level",
+    field: "(Physical Science Stream)",
     startDate: "Jun 2019",
     endDate: "Jan 2022",
-    grade: "1B and 2Cs (z-score: 1.1546)",
-    description: "Completed Advanced Level studies in Physics, Combined Mathematics, and ICT. Achieved competitive results for university entrance.",
+    grade: "2Bs and 1C (z-score: 1.1546)",
+    description: "Completed Advanced Level studies in Combined Mathematics, Physics, and ICT, qualifying for university entrance in Computer Science.",
     activities: [
       "Board Member (Editor) - Science Union (2020-2021)",
       "Member of ICT Society (2019-2021)",
       "Member of Science Union (2019-2021)",
-      "Member of Shooting Sports Association (2019-2021)"
+      "Member of Shooting Sports Association (2019-2021)",
     ],
     logo: "/education/ananda_logo.png"
   },
@@ -95,15 +95,16 @@ export const educations: Education[] = [
   {
     id: "6",
     institution: "University of Jaffna",
-    degree: "Computer Science",
+    degree: "B.Sc. Hons (Computer Science)",
     field: "(Undergraduate)",
     startDate: "Oct 2023",
     endDate: "Present",
-    description: "Currently pursuing BSc Computer Science with focus on software development, algorithms, and data structures.",
+    grade: "Expected completion: 2027",
+    description: "Pursuing BSc in Computer Science with a strong focus on Cloud Computing, DevOps, Distributed Systems, Software Engineering, Reliability, and Microservices. 4th-year research topic: 'Empirical Evaluation of Microservice Failure Detection Using API Response Signals and Infrastructure Metrics', evaluating microservice failure detection using API response signals, infrastructure metrics, failure behaviour, and reliability-related observations.",
     activities: [
-      "Badminton",
-      "Gavel Club",
-      "IEEE Student Branch"
+      "AWS Student Builder Group Leader at University of Jaffna",
+      "IEEE Student Branch Executive Committee",
+      "Gavel Club & University Badminton",
     ],
     skills: [
       "Java",
@@ -111,7 +112,7 @@ export const educations: Education[] = [
       "MIPS Assembly",
       "MySQL",
       "MongoDB",
-      "Perl"
+      "Perl",
     ],
     logo: "/education/UOJ-Logo-Color-scaled.png"
   }

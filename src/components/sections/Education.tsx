@@ -237,11 +237,28 @@ const EducationModal: React.FC<{
 
         {/* Content Section */}
         <div className="p-8">
-          {/* Description */}
+          {/* Description / Research Highlight */}
           {education.description && (
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-dark mb-3">About</h3>
+              <h3 className="text-lg font-semibold text-dark mb-3">About & Research Focus</h3>
               <p className="text-gray-600 leading-relaxed">{education.description}</p>
+            </div>
+          )}
+
+          {/* Key Technical Focus / Skills */}
+          {education.skills && education.skills.length > 0 && (
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-dark mb-3">Core Areas & Technologies</h3>
+              <div className="flex flex-wrap gap-2">
+                {education.skills.map((skill, idx) => (
+                  <span
+                    key={idx}
+                    className="px-3 py-1 bg-primary/10 text-primary font-medium text-sm rounded-full"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           )}
 
@@ -249,7 +266,7 @@ const EducationModal: React.FC<{
           {education.activities && education.activities.length > 0 && (
             <div>
               <h3 className="text-lg font-semibold text-dark mb-3">
-                Activities and Societies
+                Activities and Leadership Roles
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {education.activities.map((activity, idx) => (
