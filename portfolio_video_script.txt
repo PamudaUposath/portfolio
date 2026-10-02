@@ -1,0 +1,17 @@
+Hello and welcome! Today, I’m excited to walk you through my personal portfolio website, designed to showcase my skills, projects, and achievements as a AWS Cloud Captain, QA Engineer, and passionate volunteer.
+
+The navigation bar at the top lets you easily explore different sections: Projects, Experience, Education, Open Source, Skills, Achievements, Certifications, and Contact.
+
+As you land on the homepage, you’ll see my name, Pamuda Uposath de Alwis Goonatilake, displayed prominently. The hero section introduces who I am, my professional roles, and a brief summary of my journey in tech and volunteering.
+
+Scroll down to see my featured projects. Each project card shows the title, tech stack, and a short description. Click on any project to view detailed information, images, and links to source code or live demos. Projects are sorted from newest to oldest, so you always see my latest work first.
+
+The Experience section outlines my professional journey, including key roles and responsibilities. The Education section details my academic background and certifications.
+
+I actively contribute to open source. This section highlights my involvement in global developer communities, with details about each project and my contributions.
+
+You’ll find a comprehensive list of my technical skills, notable achievements, and certifications, demonstrating my commitment to continuous learning and excellence.
+
+Finally, the contact section provides a simple form for visitors to reach out, whether for collaboration, questions, or networking.
+
+Thank you for exploring my portfolio! Visit pamudauposath.github.io/portfolio to see it live, and feel free to connect with me on LinkedIn or GitHub. I look forward to collaborating and growing together in the tech community.

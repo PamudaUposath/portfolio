@@ -242,6 +242,15 @@ export const achievements: Achievement[] = [
     link: "https://verify.skillsnetwork.site/certificates/fywnzewr0m",
     category: "certification",
   },
+  {
+    id: "cert-20",
+    title: "AWS New Voices 2026",
+    issuer: "Amazon Web Services (AWS)",
+    date: "September 2026",
+    description: "Successfully completed the 5-week AWS New Voices 2026 speaker development programme covering technical public speaking, breathing exercises, lightning talks, audience engagement, and community leadership.",
+    link: "https://builder.aws.com/content/3JMn8wlkp2akhBOsrbsB4wFmDm1/from-practice-to-the-stage-my-aws-new-voices-2026-journey",
+    category: "certification",
+  },
   
   // PUBLICATIONS
   {
@@ -260,6 +269,15 @@ export const achievements: Achievement[] = [
     date: "June 2025",
     description: "Article published on page 25 (ISSN 2806-531X) about automating WhatsApp using Python's PyWhatKit library.",
     link: "https://www.linkedin.com/",
+    category: "publication",
+  },
+  {
+    id: "pub-3",
+    title: "From Practice to the Stage: My AWS New Voices 2026 Journey",
+    issuer: "AWS Builder Center",
+    date: "September 2026",
+    description: "Taking part in AWS New Voices 2026, with public speaking practice, breathing exercises, lightning talks, and global connections, helped me become a more confident speaker. Shares lessons learned and how they were applied in leading the University of Jaffna AWS community.",
+    link: "https://builder.aws.com/content/3JMn8wlkp2akhBOsrbsB4wFmDm1/from-practice-to-the-stage-my-aws-new-voices-2026-journey",
     category: "publication",
   },
   {
@@ -310,6 +328,34 @@ export const achievements: Achievement[] = [
       "Won 1st place among competing teams"
     ],
     teamMembers: ["Team Code Rangers"],
+    category: "award",
+  },
+  {
+    id: "award-7",
+    title: "Best Performing Project Coordinator",
+    issuer: "IEEE Young Professionals Sri Lanka (IEEE YPSL Summit 2025)",
+    date: "2025",
+    description: "Awarded Best Performing Project Coordinator at IEEE YPSL Summit 2025 for exceptional leadership and coordination.",
+    detailedDescription: "Recognised as the Best Performing Project Coordinator at the IEEE YPSL Summit 2025 for outstanding contribution, teamwork, and project execution across volunteer initiatives.",
+    achievements: [
+      "Awarded Best Performing Project Coordinator",
+      "Recognised for exceptional volunteer leadership and milestone delivery",
+      "Coordinated cross-functional teams and operational logistics"
+    ],
+    category: "award",
+  },
+  {
+    id: "award-8",
+    title: "UOJ Coders 5.0 - Finalist",
+    issuer: "Computer Science Department, University of Jaffna",
+    date: "2026",
+    description: "Two-time UOJ Coders Finalist, qualifying as a finalist in UOJ Coders 5.0 (2026) following UOJ Coders v4.0.",
+    detailedDescription: "Qualified as a finalist in UOJ Coders 5.0 (2026), marking a consecutive achievement as a Two-time UOJ Coders Finalist (v4.0 & 5.0) in the premier competitive programming contest at University of Jaffna.",
+    achievements: [
+      "Two-time UOJ Coders Finalist (UOJ Coders v4.0 & UOJ Coders 5.0)",
+      "Solved advanced algorithmic problems under timed competitive settings",
+      "Ranked among top programming finalists"
+    ],
     category: "award",
   },
 ];

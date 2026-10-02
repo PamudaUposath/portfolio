@@ -3,8 +3,8 @@ import { getProjectsCompletedCount, getYearsOfExperience, getTopTechStack } from
 
 export const siteConfig = {
   name: "Pamuda U. de A. Goonatilake",
-  title: "Full Stack Developer & Cloud Enthusiast",
-  tagline: "Passionate about cloud technologies, software quality, volunteering, and empowering tech communities.",
+  title: "Computer Science Undergraduate | Cloud, DevOps & Site Reliability Engineering",
+  tagline: "Computer Science undergraduate at the University of Jaffna with a strong interest in Cloud Computing, DevOps, Site Reliability Engineering, and Software Development. I enjoy building practical systems using AWS, cloud-native technologies, automation tools, and modern software frameworks. I am particularly interested in understanding how reliable and scalable systems are designed, deployed, monitored, and operated.",
   email: "pamudaugoonatilake@gmail.com",
   phone: "+94716813566", // Optional
   location: "Colombo, Sri Lanka",
@@ -26,7 +26,7 @@ export const siteConfig = {
   },
   
   // Resume/CV link
-  cvUrl: "/path-to-your-cv.pdf", // Place your CV in the public folder
+  cvUrl: "/cv.pdf", // CV located in the public folder
   
   // Stats for hero section - Dynamically calculated from data files
   get stats() {

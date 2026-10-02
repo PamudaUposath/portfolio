@@ -6,7 +6,7 @@ export interface Project {
   description: string;
   shortDescription: string; // Brief 1-2 line summary for cards
   category: "Mobile" | "Web" | "Cloud" | "IoT" | "All";
-  projectType: "Team" | "Individual";
+  projectType: "Team" | "Individual" | "Open Source";
   tech: string[];
   image: string; // Path to image in public folder or URL (main/thumbnail image)
   gallery?: { url: string; type: "image" | "video" }[]; // Additional images/videos for modal
@@ -206,7 +206,7 @@ export const projects: Project[] = [
     tech: ["React", "DevOps", "Linux", "CI/CD", "Docker"],
     image: "/projects/RealStateProject.png",
     startDate: "Oct 2025",
-    endDate: "Present",
+    endDate: "Feb 2026",
     githubUrl: "https://github.com/PamudaUposath",
     highlight: true,
     participants: [
@@ -220,7 +220,7 @@ export const projects: Project[] = [
       { name: "Team Member 8", linkedinUrl: "https://www.linkedin.com/" },
       { name: "Team Member 9", linkedinUrl: "https://www.linkedin.com/" },
     ],
-    ongoing: true,
+    ongoing: false,
   },
   {
     id: "12",
@@ -236,5 +236,64 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/PamudaUposath/SLBIS-Pro",
     highlight: true,
     ongoing: true,
+  },
+  {
+    id: "13",
+    title: "AWS Community World",
+    shortDescription: "Open-source interactive 3D geospatial visualisation of the global AWS community network.",
+    description: "An open-source interactive 3D geospatial visualisation platform built to map and showcase AWS user groups, cloud clubs, and community hubs worldwide. Combines Three.js and globe.gl with MapLibre and D3 geo utilities to render high-performance interactive globe representations.",
+    category: "Cloud",
+    projectType: "Open Source",
+    tech: ["React", "Vite", "Tailwind CSS", "Three.js", "globe.gl", "MapLibre", "D3", "Open Source"],
+    image: "/projects/coming-soon.jpg",
+    startDate: "Jan 2026",
+    endDate: "Present",
+    githubUrl: "https://github.com/PamudaUposath/aws-community-world",
+    highlight: true,
+  },
+  {
+    id: "14",
+    title: "RSVP Cleaner",
+    shortDescription: "Privacy-focused web app that cleans participant registration CSV files by detecting duplicates and invalid values.",
+    description: "RSVP Cleaner is a privacy-focused web application built for the AWS Builder Center Weekend Annoying Task Challenge. It cleans participant registration CSV files by detecting duplicates, missing information, invalid values, and inconsistent confirmation statuses through automated serverless pipelines.",
+    category: "Cloud",
+    projectType: "Individual",
+    tech: ["AWS", "AWS Lambda", "Python", "Amazon S3", "API Gateway", "Data Cleansing"],
+    image: "/projects/coming-soon.jpg",
+    startDate: "Aug 2026",
+    endDate: "Aug 2026",
+    githubUrl: "https://github.com/PamudaUposath/weekend-challenge-rsvp-cleaner",
+    liveUrl: "https://builder.aws.com/content/3HFrSoAaAR2SCSDScLx8qfkZViN/weekend-annoying-task-challenge-rsvp-cleaner",
+    highlight: true,
+  },
+  {
+    id: "15",
+    title: "PlotTwist & PlotTwist Autopilot",
+    shortDescription: "Interactive branching storytelling app transformed into an always-on autonomous AI storytelling agent.",
+    description: "An interactive branching storytelling application built with React and TypeScript, where every decision changes what happens next using a deterministic procedural story engine deployed on AWS Amplify. Evolved into an always-on autonomous story agent (PlotTwist Autopilot) for the AWS Builder Center Weekend Creative Agent Challenge using Amazon EventBridge Scheduler, AWS Lambda, Amazon Bedrock, DynamoDB, API Gateway, and AWS Amplify that continues generating stories even when no users are online.",
+    category: "Cloud",
+    projectType: "Individual",
+    tech: ["React", "TypeScript", "AWS Amplify", "Amazon Bedrock", "AWS Lambda", "DynamoDB", "EventBridge", "API Gateway", "Autonomous AI Agents"],
+    image: "/projects/coming-soon.jpg",
+    startDate: "Jul 2026",
+    endDate: "Aug 2026",
+    githubUrl: "https://github.com/PamudaUposath/plottwist-ai",
+    liveUrl: "https://builder.aws.com/content/3IDZnLoEy3BKBeCy2W3zDcKF1c0/weekend-creative-agent-challenge-plottwist-autopilot",
+    highlight: true,
+  },
+  {
+    id: "16",
+    title: "StyleSeek AI",
+    shortDescription: "Conversational fashion discovery assistant combining deterministic filtering with Amazon Bedrock & Nova.",
+    description: "Built for the AWS Builder Center Weekend Showcase Challenge, StyleSeek AI is a conversational fashion discovery assistant that combines deterministic product filtering with Amazon Bedrock and Amazon Nova foundation models to recommend real, in-stock products based on natural-language user requests.",
+    category: "Cloud",
+    projectType: "Individual",
+    tech: ["Amazon Bedrock", "Amazon Nova", "AWS Lambda", "API Gateway", "AWS CDK", "React", "TypeScript", "Conversational AI"],
+    image: "/projects/coming-soon.jpg",
+    startDate: "Jul 2026",
+    endDate: "Aug 2026",
+    githubUrl: "https://github.com/PamudaUposath/styleseek-ai",
+    liveUrl: "https://builder.aws.com/content/3IRrepyxVC69ShOLJgbPDhQ4Bk1/weekend-showcase-challenge-styleseek-ai",
+    highlight: true,
   },
 ];
