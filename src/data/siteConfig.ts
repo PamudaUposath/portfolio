@@ -6,14 +6,14 @@ export const siteConfig = {
   title: "Computer Science Undergraduate | Cloud, DevOps & Site Reliability Engineering",
   tagline: "Computer Science undergraduate at the University of Jaffna with a strong interest in Cloud Computing, DevOps, Site Reliability Engineering, and Software Development. I enjoy building practical systems using AWS, cloud-native technologies, automation tools, and modern software frameworks. I am particularly interested in understanding how reliable and scalable systems are designed, deployed, monitored, and operated.",
   email: "pamudaugoonatilake@gmail.com",
-  phone: "+94716813566", // Optional
+  phone: "", // Optional
   location: "Colombo, Sri Lanka",
   
   // Social links
   social: {
     github: "https://github.com/PamudaUposath",
-    linkedin: "https://linkedin.com/in/pamuda-u-goonatilake",
-    whatsapp: "https://wa.me/94716813566", // Format: country code + number (no + or spaces)
+    linkedin: "https://www.linkedin.com/in/pamuda-uposath-goonatilake",
+    whatsapp: "https://wa.me/94", // Format: country code + number (no + or spaces)
     twitter: "https://twitter.com/goonatilakeP", // Optional
     instagram: "https://instagram.com/pamudauposath",
     medium: "https://medium.com/@pamudaugoonatilake",
