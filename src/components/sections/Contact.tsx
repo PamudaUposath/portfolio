@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Container, SectionHeader, Button, Card } from "../common";
 import { siteConfig } from "../../data/siteConfig";
+import { getAssetPath } from "../../utils/assets";
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -102,7 +103,7 @@ export const Contact: React.FC = () => {
             {/* Social Links */}
             <div>
               <h4 className="font-semibold text-dark mb-4">Follow Me</h4>
-              <div className="grid grid-cols-8 gap-3">
+              <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 gap-3">
                 {siteConfig.social.github && (
                   <SocialLink
                     href={siteConfig.social.github}
@@ -136,7 +137,7 @@ export const Contact: React.FC = () => {
                     label="Twitter/X"
                   />
                 )}
-                {siteConfig.social.whatsapp && (
+                {/* {siteConfig.social.whatsapp && (
                   <SocialLink
                     href={siteConfig.social.whatsapp}
                     icon={
@@ -146,7 +147,7 @@ export const Contact: React.FC = () => {
                     }
                     label="WhatsApp"
                   />
-                )}
+                )} */}
                 {siteConfig.social.instagram && (
                   <SocialLink
                     href={siteConfig.social.instagram}
@@ -211,6 +212,19 @@ export const Contact: React.FC = () => {
                       </svg>
                     }
                     label="Hashnode"
+                  />
+                )}
+                {siteConfig.social.awsBuilderCenter && (
+                  <SocialLink
+                    href={siteConfig.social.awsBuilderCenter}
+                    icon={
+                      <img
+                        src={getAssetPath("/aws.png")}
+                        alt="AWS Builder Center"
+                        className="w-6 h-6 object-contain group-hover:brightness-0 group-hover:invert transition-all"
+                      />
+                    }
+                    label="AWS Builder Center"
                   />
                 )}
                 {siteConfig.social.kaggle && (
@@ -364,7 +378,7 @@ const SocialLink: React.FC<{
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="w-12 h-12 bg-lightbg rounded-lg flex items-center justify-center text-dark hover:bg-primary hover:text-white transition-all hover:scale-110"
+      className="group w-12 h-12 bg-lightbg rounded-lg flex items-center justify-center text-dark hover:bg-primary hover:text-white transition-all hover:scale-110"
     >
       {icon}
     </a>

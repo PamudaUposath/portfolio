@@ -74,7 +74,7 @@ export const openSourceContributions: OpenSourceContribution[] = [
     ],
     tech: ["React", "Vite", "Tailwind CSS", "Three.js", "globe.gl", "MapLibre", "D3", "Open Source"],
     githubUrl: "https://github.com/PamudaUposath/aws-community-world",
-    websiteUrl: "https://github.com/PamudaUposath/aws-community-world",
+    websiteUrl: "https://awscommunityglobe.click/",
     status: "active",
     startDate: "Jan 2026",
     endDate: "Present",

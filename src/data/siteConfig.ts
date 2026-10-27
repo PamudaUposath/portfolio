@@ -23,6 +23,7 @@ export const siteConfig = {
     devto: "https://dev.to/pamuda_uposath",
     hashnode: "https://hashnode.com/@pamudauposath",
     kaggle: "https://kaggle.com/pamudagoonatilake",
+    awsBuilderCenter: "https://builder.aws.com/community/@pamudauposath?tab=articles",
   },
   
   // Resume/CV link

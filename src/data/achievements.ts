@@ -6,6 +6,7 @@ export interface Achievement {
   date: string; // Format: "Month YYYY"
   description?: string;
   link?: string; // Link to certificate or details
+  credentialId?: string; // Credential ID for verification
   linkedInPost?: string; // LinkedIn post link for awards
   badgeImage?: string; // Optional badge/logo image
   category?: "certification" | "award" | "publication"; // Optional categorization
@@ -244,6 +245,15 @@ export const achievements: Achievement[] = [
   },
   {
     id: "cert-20",
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services (AWS)",
+    date: "August 2026",
+    description: "Demonstrates foundational cloud fluency and comprehensive knowledge of AWS Cloud concepts, core services, security, architecture, pricing, and support models.",
+    link: "https://www.credly.com/badges/40a967e4-7032-439c-b4e4-03c661daf89f",
+    category: "certification",
+  },
+  {
+    id: "cert-21",
     title: "AWS New Voices 2026",
     issuer: "Amazon Web Services (AWS)",
     date: "September 2026",
@@ -269,15 +279,6 @@ export const achievements: Achievement[] = [
     date: "June 2025",
     description: "Article published on page 25 (ISSN 2806-531X) about automating WhatsApp using Python's PyWhatKit library.",
     link: "https://www.linkedin.com/",
-    category: "publication",
-  },
-  {
-    id: "pub-3",
-    title: "From Practice to the Stage: My AWS New Voices 2026 Journey",
-    issuer: "AWS Builder Center",
-    date: "September 2026",
-    description: "Taking part in AWS New Voices 2026, with public speaking practice, breathing exercises, lightning talks, and global connections, helped me become a more confident speaker. Shares lessons learned and how they were applied in leading the University of Jaffna AWS community.",
-    link: "https://builder.aws.com/content/3JMn8wlkp2akhBOsrbsB4wFmDm1/from-practice-to-the-stage-my-aws-new-voices-2026-journey",
     category: "publication",
   },
   {
@@ -332,13 +333,13 @@ export const achievements: Achievement[] = [
   },
   {
     id: "award-7",
-    title: "Best Performing Project Coordinator",
-    issuer: "IEEE Young Professionals Sri Lanka (IEEE YPSL Summit 2025)",
-    date: "2025",
-    description: "Awarded Best Performing Project Coordinator at IEEE YPSL Summit 2025 for exceptional leadership and coordination.",
-    detailedDescription: "Recognised as the Best Performing Project Coordinator at the IEEE YPSL Summit 2025 for outstanding contribution, teamwork, and project execution across volunteer initiatives.",
+    title: "Best Performing Project Coordinator - 2025/26",
+    issuer: "IEEE Young Professionals Sri Lanka",
+    date: "February 2026",
+    description: "Awarded Best Performing Project Coordinator - 2025/26 by IEEE Young Professionals Sri Lanka for exceptional leadership and coordination.",
+    detailedDescription: "Recognised as the Best Performing Project Coordinator - 2025/26 by IEEE Young Professionals Sri Lanka for outstanding contribution, teamwork, and project execution across volunteer initiatives.",
     achievements: [
-      "Awarded Best Performing Project Coordinator",
+      "Awarded Best Performing Project Coordinator - 2025/26",
       "Recognised for exceptional volunteer leadership and milestone delivery",
       "Coordinated cross-functional teams and operational logistics"
     ],

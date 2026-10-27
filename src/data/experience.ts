@@ -5,7 +5,7 @@ export interface Experience {
   organization: string;
   location?: string;
   startDate: string; // Format: "YYYY-MM" or "Month YYYY"
-  endDate: string; // Format: "YYYY-MM" or "Month YYYY" or "Present"
+  endDate?: string; // Format: "YYYY-MM" or "Month YYYY" or "Present"
   description: string;
   highlights: string[];
   type?: "work" | "leadership" | "volunteer"; // Optional: for categorization
@@ -217,7 +217,7 @@ export const experiences: Experience[] = [
       "Contacted potential industry partners for stalls",
       "Coordinated communication between organisers and companies",
     ],
-    type: "leadership",
+    type: "volunteer",
   },
   {
     id: "13",
@@ -233,7 +233,7 @@ export const experiences: Experience[] = [
       "Handled financial documentation and budgeting",
       "Supported entrepreneurship workshops",
     ],
-    type: "leadership",
+    type: "volunteer",
   },
   {
     id: "16",
@@ -272,8 +272,7 @@ export const experiences: Experience[] = [
     role: "Volunteer",
     organization: "AWS Student Community Day Colombo 2026",
     location: "Colombo, Sri Lanka",
-    startDate: "Jan 2026",
-    endDate: "Feb 2026",
+    startDate: "Sep 2026",
     description: "Volunteered at AWS Student Community Day Colombo 2026, supporting event operations, community engagement, and attendee coordination.",
     highlights: [
       "Supported event execution and attendee coordination",

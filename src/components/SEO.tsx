@@ -12,7 +12,7 @@ interface SEOProps {
 }
 
 export const SEO: React.FC<SEOProps> = ({
-  title = "Pamuda Goonatilake | Cloud, DevOps & SRE",
+  title = "Pamuda - Portfolio",
   description = siteConfig.tagline,
   image = "/og-image.jpg", // You'll need to add this image to public folder
   url = "https://pamudauposath.github.io/portfolio/",
@@ -107,6 +107,7 @@ export const SEO: React.FC<SEOProps> = ({
             siteConfig.social.youtube,
             siteConfig.social.devto,
             siteConfig.social.hashnode,
+            siteConfig.social.awsBuilderCenter,
           ].filter(Boolean),
         })}
       </script>
