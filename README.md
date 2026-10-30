@@ -2,7 +2,7 @@
 
 🌐 **Live Site**: [https://pamudauposath.github.io/portfolio/](https://pamudauposath.github.io/portfolio/)
 
-A modern, responsive personal portfolio website showcasing my projects, experience, skills, and achievements as a QA Engineer and tech community leader.
+A modern, responsive personal portfolio website showcasing my projects, experience, skills, and achievements as a tech community leader.
 
 ## 🛠️ Built With
 
