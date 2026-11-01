@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
               <Button variant="primary" size="lg" href="#contact">
                 Contact Me
               </Button>
-              <Button variant="outline" size="lg" href={siteConfig.cvUrl}>
+              <Button variant="outline" size="lg" href={getAssetPath(siteConfig.cvUrl)} target="_blank" rel="noopener noreferrer">
                 Download CV
               </Button>
             </div>
@@ -190,7 +190,7 @@ export const Hero: React.FC = () => {
               <Button variant="primary" size="lg" href="#contact">
                 Contact Me
               </Button>
-              <Button variant="outline" size="lg" href={siteConfig.cvUrl}>
+              <Button variant="outline" size="lg" href={getAssetPath(siteConfig.cvUrl)} target="_blank" rel="noopener noreferrer">
                 Download CV
               </Button>
             </div>

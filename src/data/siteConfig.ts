@@ -27,7 +27,7 @@ export const siteConfig = {
   },
   
   // Resume/CV link
-  cvUrl: "/cv.pdf", // CV located in the public folder
+  cvUrl: "/cv/Pamuda-Sep-2026-public.pdf", // CV located in the public folder
   
   // Stats for hero section - Dynamically calculated from data files
   get stats() {

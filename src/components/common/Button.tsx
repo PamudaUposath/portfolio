@@ -7,6 +7,8 @@ interface ButtonProps {
   variant?: "primary" | "secondary" | "outline";
   size?: "sm" | "md" | "lg";
   href?: string;
+  target?: string;
+  rel?: string;
   className?: string;
   type?: "button" | "submit" | "reset";
 }
@@ -17,6 +19,8 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   size = "md",
   href,
+  target,
+  rel,
   className = "",
   type = "button",
 }) => {
@@ -38,8 +42,12 @@ export const Button: React.FC<ButtonProps> = ({
   const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (href) {
+    const isExternal = href.startsWith("http");
+    const linkTarget = target ?? (isExternal ? "_blank" : undefined);
+    const linkRel = rel ?? (linkTarget === "_blank" ? "noopener noreferrer" : undefined);
+
     return (
-      <a href={href} className={classes} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined}>
+      <a href={href} className={classes} target={linkTarget} rel={linkRel}>
         {children}
       </a>
     );

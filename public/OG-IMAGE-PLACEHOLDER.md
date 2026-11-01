@@ -15,7 +15,7 @@
 2. Your name: "Pamuda U. de A. Goonatilake"
 3. Title: "Full Stack Developer & Cloud Enthusiast"
 4. Key positions:
-   - AWS Cloud Club Captain
+   - AWS SBG Leader
    - Program Team Lead - IEEE
 5. Brand color: #ff7300 (Orange)
 6. University of Jaffna logo (if permitted)
