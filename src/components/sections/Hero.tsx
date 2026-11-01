@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-dark leading-tight whitespace-nowrap">
               {siteConfig.name}
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 whitespace-pre-line">
               {siteConfig.title}
             </h2>
 
@@ -159,7 +159,7 @@ export const Hero: React.FC = () => {
             <h1 className="text-3xl sm:text-4xl font-bold text-dark leading-tight">
               {siteConfig.name}
             </h1>
-            <h2 className="text-xl sm:text-2xl font-semibold text-gray-700">
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 whitespace-pre-line">
               {siteConfig.title}
             </h2>
 
